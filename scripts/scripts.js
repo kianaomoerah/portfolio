@@ -1,9 +1,9 @@
-const topButton = document.querySelector('#scrollToTopButton');
+// const topButton = document.querySelector('#scrollToTopButton');
 
-topButton.addEventListener("click", function(){
+// topButton.addEventListener("click", function(){
 
-    window.scrollTo(0, 0);
-});
+//     window.scrollTo(0, 0);
+// });
 
 const mobileNavButton = document.querySelector('.mobileMenuButton');
 
@@ -26,8 +26,6 @@ for (let i = 0; i < projectsList.length; i++) {
 
         const project = projectsList[i];
 
-        console.log(project)
-
         if(e.target.classList.contains("overlayClose")){
             return
         }
@@ -44,7 +42,6 @@ for (let i = 0; i < overlayCloseButtons.length; i++) {
 
         this.parentElement.classList.remove("reveal")
 
-        console.log(this.parentElement.classList.contains("reveal"))
     })
 };
 

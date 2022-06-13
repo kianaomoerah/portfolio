@@ -341,7 +341,7 @@ h1 {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: -1px;
-  margin: 10px 0 0 0;
+  margin: 20px 0px;
 }
 
 h2 {
@@ -419,7 +419,7 @@ nav .mobileMenuButton {
   background: none;
   position: absolute;
   right: 30px;
-  top: 15px;
+  top: 25px;
   color: #000000;
 }
 nav .mobileMenuButton:hover, nav .mobileMenuButton:focus {
@@ -471,6 +471,7 @@ header .contactLinks {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 20px;
 }
 header .contactLinks a {
   margin: 20px 0;
@@ -812,7 +813,7 @@ header .photoContainer img {
 @media (min-width: 1025px) {
   h1 {
     font-size: 3.8rem;
-    padding-bottom: 170px;
+    padding-bottom: 120px;
     margin: 0;
   }
 

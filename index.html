@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Kiana Omoerah</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body id="top">
     <header>
@@ -42,7 +46,7 @@
                 </ul>
             </div>
             <div class="photoContainer">
-                <img src="./assets/profile.JPG" alt="a portrait photo of Kiana">
+                <img class="portfolioPhoto" src="./assets/profile.JPG" alt="a portrait photo of Kiana">
             </div>
         </section>
     </header>
@@ -64,12 +68,24 @@
                 <p class="skillSubtitle">css</p>
             </li>
             <li>
+                <i class="devicon-vscode-plain"></i>
+                <p class="skillSubtitle">vscode</p>
+            </li>
+            <li>
                 <i class="fa-brands fa-sass"></i>
                 <p class="skillSubtitle">sass</p>
             </li>
             <li>
                 <i class="fa-brands fa-js-square"></i>
                 <p class="skillSubtitle">javascript</p>
+            </li>
+            <li>
+                <i class="devicon-jquery-plain"></i>
+                <p class="skillSubtitle">jquery</p>
+            </li>
+            <li>
+                <i class="fa-solid fa-laptop-code"></i>
+                <p class="skillSubtitle">rest APIs</p>
             </li>
             <li>
                 <i class="fa-brands fa-react"></i>
@@ -79,6 +95,18 @@
             <li>
                 <i class="fa-solid fa-universal-access"></i>
                 <p class="skillSubtitle">accessibility</p>
+            </li>
+            <li>
+                <i class="fa-solid fa-mobile-screen"></i>
+                <p class="skillSubtitle">responsive design</p>
+            </li>
+            <li>
+                <i class="fa-brands fa-searchengin"></i>
+                <p class="skillSubtitle">seo</p>
+            </li>
+            <li>
+                <i class="devicon-figma-plain"></i>
+                <p class="skillSubtitle">figma</p>
             </li>
             <li>
                 <i class="devicon-firebase-plain"></i>
@@ -97,8 +125,8 @@
             <div class="projectContainer projectOne" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
                 <img src="./assets/deliciousWebsite.png" alt="a photo macbook with a preview of the declicious website">
                 <div class="overlay overlayOne">
+                    <h4 class="projectTitle">Delicious</h4>
                     <i class="fa-solid fa-xmark overlayClose"></i>
-                    <h4>Delicious</h4>
                     <p>PSD conversion from design to a multi-page, functional and responsive website. </p>
                    <ul class="overlaySkillsList">
                         <li class="overlaySkills">HTML5</li>
@@ -112,10 +140,10 @@
                 </div>
             </div>
             <div class="projectContainer projectTwo" data-aos="fade-left" data-aos-duration="900" data-aos-once="true">
-                <img src="./assets/sipMeBabyApp.png" alt="a photo of an iphone open displaying a screenshot of the sip me baby one more time app">
+                <img class="phonePreview" src="./assets/sipMeBabyApp.png" alt="a photo of an iphone open displaying a screenshot of the sip me baby one more time app">
                 <div class="overlay overlayTwo">
+                    <h4 class="projectTitle">Sip Me Baby <br> One More Time</h4>
                     <i class="fa-solid fa-xmark overlayClose"></i>
-                    <h4>Sip Me Baby One More Time</h4>
                     <p> Find your next cocktail using the Cocktail Generator App. Search by liquor/ ingredient, or generate a random cocktail!</p>
                     <ul class="overlaySkillsList">
                         <li class="overlaySkills">HTML5</li>
@@ -134,8 +162,8 @@
             <div class="projectContainer projectThree" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
                 <img src="./assets/deliciousWebsite.png" alt="a photo macbook with a preview of the declicious website">
                 <div class="overlay overlayThree">
+                    <h4 class="projectTitle">The Lazy Planter</h4>
                     <i class="fa-solid fa-xmark overlayClose"></i>
-                    <h4>Delicious</h4>
                     <p>PSD conversion from design to a multi-page, functional and responsive website. </p>
                     <ul class="overlaySkillsList">
                         <li class="overlaySkills">HTML5</li>
@@ -149,11 +177,11 @@
                 </div>
             </div>
             <div class="projectContainer projectFour" data-aos="fade-left" data-aos-duration="900" data-aos-once="true">
-                <img src="./assets/sipMeBabyApp.png"
+                <img class="phonePreview" src="./assets/sipMeBabyApp.png"
                     alt="a photo of an iphone open displaying a screenshot of the sip me baby one more time app">
                 <div class="overlay overlayFour">
+                    <h4 class="projectTitle">Sip Me Baby One More Time</h4>
                     <i class="fa-solid fa-xmark overlayClose"></i>
-                    <h4>Sip Me Baby One More Time</h4>
                     <p> Find your next cocktail using the Cocktail Generator App. Search by liquor/ ingredient, or generate a random
                         cocktail!</p>
                     <ul class="overlaySkillsList">
@@ -171,13 +199,12 @@
             </div>
         </div>
     </section>
-</main>
     <section class="contact" id="contact">
         <div class="wrapper">
             <h3 class="centerTitle">Contact</h3>
             <h4>Let's Work Together!</h4>
         
-            <fieldset>
+            <form name="portfolioContact" method="POST" data-netlify="true">
                 <div class="contactFlexContainer">
                     <label for="name" class="sr-only">Your Name</label>
                     <input class="name" type="text" id="name" placeholder="Your Name">
@@ -188,10 +215,14 @@
                 <label for="message" class="sr-only"></label>
                 <textarea class="message" type="text" id="message" placeholder="Message"></textarea>
 
-                <button class="contactSubmit">Send Your Message</button>
-            </fieldset>
+                <button class="contactSubmit">Send Message</button>
+            </form>
         </div>
     </section>
+    </main>
+    <footer>
+        <p>Developed with 🤎 by Kiana Omoerah</p>
+    </footer>
     <!-- // on scroll animation provided by AOS library https: //michalsnik.github.io/aos/ -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

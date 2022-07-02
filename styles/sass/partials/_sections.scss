@@ -5,7 +5,7 @@ nav {
         border: none;
         font-size: 1.5rem;
         &:hover {
-            color: $red;
+            color: $orange;
             cursor:pointer;
         }
 
@@ -41,7 +41,7 @@ nav {
 
         &:hover,
             &:focus {
-                color: $red;
+                color: $orange;
             }
     }
 
@@ -65,7 +65,7 @@ nav {
 
                 &:hover,
                     &:focus {
-                        color: $red;
+                        color: $orange;
                     }
         }
     }
@@ -91,7 +91,7 @@ header {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            margin-bottom: 20px;
+            margin-bottom: 50px;
     
             a {
                 margin: 20px 0;
@@ -108,8 +108,10 @@ header {
 
         img {
             display:inline-block;
+            object-fit: cover;
             max-height: 100%;
             max-width: 100%;
+    
         }
     }
 }
@@ -154,6 +156,21 @@ header {
                 margin-bottom: 3px;
             }
     }
+    
+    .fa-brands, 
+    .fa-solid,
+    .devicon-vscode-plain,
+    .devicon-jquery-plain,
+    .devicon-figma-plain,
+    .devicon-firebase-plain
+     {
+        transition: transform .2s;
+
+        &:hover {
+            transform: scale(1.25);
+        }
+    }
+
 
     .skillSubtitle {
         color: $white;
@@ -174,6 +191,7 @@ header {
     .projectContainer {
         border-radius: 8px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 395px;
@@ -181,6 +199,23 @@ header {
         border: none;
         box-shadow: none;
         margin: 7px auto;
+        z-index: 2;
+
+        img {
+            max-width: 100%;
+        }
+
+        .phonePreview {
+            max-width: 85%;
+        }
+
+        // h4 {
+        //     position:relative;
+        //     top: 8%;
+        //     font-size: 1.3rem;
+        //     text-align: center;
+        //     margin: 0;
+        // }
     }
 
     .projectOne {
@@ -242,7 +277,7 @@ header {
                 border: none;
                 display: inline-block;
                 transition: all .3s;
-                background-color: $red;
+                background-color: $orange;
                 color: $white;
                 cursor: pointer;
                 margin: 0;
@@ -290,7 +325,8 @@ header {
 }
 
 .overlay.reveal {
-    opacity: 1 !important;
+    opacity: 1 
+    // !important;
 }
 
 .contact {
@@ -317,11 +353,15 @@ header {
         padding: 10px;
     }
 
-    fieldset {
+    form {
         border: none;
         width: 100%;
         display: flex;
         flex-direction: column;
+
+        textarea {
+            resize: none;
+        }
 
         input,
         textarea {
@@ -341,13 +381,12 @@ header {
 
             }
         }
-
     }
 
     .contactSubmit {
         border: none;
         transition: all .3s;
-        background-color: $red;
+        background-color: $orange;
         color: white;
         cursor: pointer;
         margin: 0;
@@ -360,5 +399,15 @@ header {
             background-color: $black;
         }
     }
+}
 
+footer {
+    background-color: $color6;
+    text-align: center;
+
+    p {
+        margin: 0;
+        font-size: .7rem;
+
+    }
 }

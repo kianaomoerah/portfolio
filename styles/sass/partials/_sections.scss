@@ -5,7 +5,7 @@ nav {
         border: none;
         font-size: 1.5rem;
         &:hover {
-            color: $orange;
+            color: $red;
             cursor:pointer;
         }
 
@@ -41,7 +41,7 @@ nav {
 
         &:hover,
             &:focus {
-                color: $orange;
+                color: $red;
             }
     }
 
@@ -65,7 +65,7 @@ nav {
 
                 &:hover,
                     &:focus {
-                        color: $orange;
+                        color: $red;
                     }
         }
     }
@@ -277,7 +277,7 @@ header {
                 border: none;
                 display: inline-block;
                 transition: all .3s;
-                background-color: $orange;
+                background-color: $red;
                 color: $white;
                 cursor: pointer;
                 margin: 0;
@@ -386,7 +386,7 @@ header {
     .contactSubmit {
         border: none;
         transition: all .3s;
-        background-color: $orange;
+        background-color: $red;
         color: white;
         cursor: pointer;
         margin: 0;

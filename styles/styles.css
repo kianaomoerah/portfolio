@@ -319,11 +319,11 @@ a {
   color: #000000;
 }
 a:hover, a:focus-visible {
-  color: #e69686;
+  color: #E66961;
 }
 
 i:hover, i:focus-visible {
-  color: #e69686;
+  color: #E66961;
   cursor: pointer;
 }
 
@@ -394,7 +394,7 @@ nav button {
   font-size: 1.5rem;
 }
 nav button:hover {
-  color: #e69686;
+  color: #E66961;
   cursor: pointer;
 }
 nav button .fa-angle-down {
@@ -422,7 +422,7 @@ nav .mobileMenuButton {
   color: #000000;
 }
 nav .mobileMenuButton:hover, nav .mobileMenuButton:focus {
-  color: #e69686;
+  color: #E66961;
 }
 nav .mobileMenu {
   width: 100%;
@@ -444,7 +444,7 @@ nav .mobileMenu a {
   color: #FFFFFF;
 }
 nav .mobileMenu a:hover, nav .mobileMenu a:focus {
-  color: #e69686;
+  color: #E66961;
 }
 nav .revealMenu {
   display: block;
@@ -682,7 +682,7 @@ header .photoContainer img {
   display: inline-block;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-color: #e69686;
+  background-color: #E66961;
   color: #FFFFFF;
   cursor: pointer;
   margin: 0;
@@ -800,7 +800,7 @@ header .photoContainer img {
   border: none;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-color: #e69686;
+  background-color: #E66961;
   color: white;
   cursor: pointer;
   margin: 0;

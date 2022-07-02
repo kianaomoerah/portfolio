@@ -602,7 +602,14 @@ header .photoContainer img {
   -webkit-box-shadow: none;
           box-shadow: none;
   margin: 7px auto;
-  z-index: 2;
+  position: relative;
+}
+.projects .projectContainer .projectTitle {
+  position: absolute;
+  top: 10%;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 0;
 }
 .projects .projectContainer img {
   max-width: 100%;
@@ -929,6 +936,10 @@ footer p {
 
   .skills .skillsList .skillSubtitle {
     margin: 25px;
+  }
+
+  .projects .projectContainer h4 {
+    top: 15%;
   }
 }
 @media (min-width: 575px) and (max-width: 768px) {

@@ -235,7 +235,7 @@ header {
     }
 
     .overlay {
-        display: flex;
+        display: hidden;
         justify-content: space-evenly;
         flex-direction: column;
         padding: 30px;
@@ -325,8 +325,8 @@ header {
 }
 
 .overlay.reveal {
-    opacity: 1 
-    // !important;
+    opacity: 1;
+    display: flex;
 }
 
 .contact {

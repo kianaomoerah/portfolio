@@ -630,9 +630,7 @@ header .photoContainer img {
   background-color: #cc6979;
 }
 .projects .overlay {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: hidden;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -729,6 +727,9 @@ header .photoContainer img {
 
 .overlay.reveal {
   opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .contact {

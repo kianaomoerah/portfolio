@@ -46,7 +46,7 @@
                 </ul>
             </div>
             <div class="photoContainer">
-                <img class="portfolioPhoto" src="./assets/profile.JPG" alt="a portrait photo of Kiana">
+                <img src="./assets/profile.JPG" alt="a portrait photo of Kiana">
             </div>
         </section>
     </header>
@@ -210,13 +210,14 @@
             <h3 class="centerTitle">Contact</h3>
             <h4>Let's Work Together!</h4>
         
-            <form name="portfolioContact" method="POST" data-netlify="true">
+            <form name="portfolioContact" method="post" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact" />
                 <div class="contactFlexContainer">
                     <label for="name" class="sr-only">Your Name</label>
                     <input class="name" type="text" id="name" placeholder="Your Name">
 
                     <label for="email" class="sr-only">Your Email</label>
-                    <input class="email" type="text" id="email" placeholder="Your Email">
+                    <input class="email" type="email" id="email" placeholder="Your Email">
                 </div>
                 <label for="message" class="sr-only"></label>
                 <textarea class="message" type="text" id="message" placeholder="Message"></textarea>

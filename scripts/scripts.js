@@ -1,10 +1,3 @@
-// const topButton = document.querySelector('#scrollToTopButton');
-
-// topButton.addEventListener("click", function(){
-
-//     window.scrollTo(0, 0);
-// });
-
 const mobileNavButton = document.querySelector('.mobileMenuButton');
 
 const mobileNav = document.querySelector('.mobileMenu');

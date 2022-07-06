@@ -9,16 +9,20 @@ body {
     font-family: $josefin;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 .wrapper {
    max-width: 1250px;
    width: 95%;
    margin: 0 auto; 
 }
 
-img {
-    max-width: 100%;
-    display: inline-block;
-}
+// img {
+//     max-width: 100%;
+//     display: inline-block;
+// }
 
 p {
     color: $grey;

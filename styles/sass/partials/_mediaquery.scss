@@ -17,8 +17,7 @@
             display:none;
         }
 
-    }
-    
+    }    
 }
 
 @media (min-width: 1080px) {
@@ -47,7 +46,7 @@
 
     h1 {
         font-size: 3.8rem;
-        padding-bottom: 120px;
+        padding-bottom: 80px;
         margin: 0;
     }
 
@@ -92,7 +91,7 @@
 
     .skills {
 
-        padding: 5px 15px 45px 15px;
+        padding: 25px 15px 45px 15px;
         
         .skillsList {
             li {
@@ -129,6 +128,16 @@
                margin: 25px;
            }
        }
+   }
+
+   .projects {
+
+        .projectContainer {
+
+            h4 {
+                top: 15%;
+            }
+        }
    }
 }
 
@@ -177,6 +186,19 @@
         }
     }
 }
+
+// @media (min-width: 625px) {
+
+//     .projects {
+    
+//             .projectContainer {
+    
+//                 .projectTitle {
+//                     top: 6%;
+//                 }
+//             }
+//         }
+// }
 
 @media (min-width:575px) {
 

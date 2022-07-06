@@ -294,15 +294,14 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 .wrapper {
   max-width: 1250px;
   width: 95%;
   margin: 0 auto;
-}
-
-img {
-  max-width: 100%;
-  display: inline-block;
 }
 
 p {
@@ -320,11 +319,11 @@ a {
   color: #000000;
 }
 a:hover, a:focus-visible {
-  color: #E93313;
+  color: #E66961;
 }
 
 i:hover, i:focus-visible {
-  color: #E93313;
+  color: #E66961;
   cursor: pointer;
 }
 
@@ -395,7 +394,7 @@ nav button {
   font-size: 1.5rem;
 }
 nav button:hover {
-  color: #E93313;
+  color: #E66961;
   cursor: pointer;
 }
 nav button .fa-angle-down {
@@ -423,7 +422,7 @@ nav .mobileMenuButton {
   color: #000000;
 }
 nav .mobileMenuButton:hover, nav .mobileMenuButton:focus {
-  color: #E93313;
+  color: #E66961;
 }
 nav .mobileMenu {
   width: 100%;
@@ -445,7 +444,7 @@ nav .mobileMenu a {
   color: #FFFFFF;
 }
 nav .mobileMenu a:hover, nav .mobileMenu a:focus {
-  color: #E93313;
+  color: #E66961;
 }
 nav .revealMenu {
   display: block;
@@ -471,7 +470,7 @@ header .contactLinks {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 header .contactLinks a {
   margin: 20px 0;
@@ -485,6 +484,8 @@ header .photoContainer {
 }
 header .photoContainer img {
   display: inline-block;
+  -o-object-fit: cover;
+     object-fit: cover;
   max-height: 100%;
   max-width: 100%;
 }
@@ -541,6 +542,26 @@ header .photoContainer img {
       align-self: center;
   margin-bottom: 3px;
 }
+.skills .fa-brands,
+.skills .fa-solid,
+.skills .devicon-vscode-plain,
+.skills .devicon-jquery-plain,
+.skills .devicon-figma-plain,
+.skills .devicon-firebase-plain {
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+.skills .fa-brands:hover,
+.skills .fa-solid:hover,
+.skills .devicon-vscode-plain:hover,
+.skills .devicon-jquery-plain:hover,
+.skills .devicon-figma-plain:hover,
+.skills .devicon-firebase-plain:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
 .skills .skillSubtitle {
   color: #FFFFFF;
   text-transform: uppercase;
@@ -565,6 +586,10 @@ header .photoContainer img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -577,6 +602,20 @@ header .photoContainer img {
   -webkit-box-shadow: none;
           box-shadow: none;
   margin: 7px auto;
+  position: relative;
+}
+.projects .projectContainer .projectTitle {
+  position: absolute;
+  top: 10%;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 0;
+}
+.projects .projectContainer img {
+  max-width: 100%;
+}
+.projects .projectContainer .phonePreview {
+  max-width: 85%;
 }
 .projects .projectOne {
   background-color: #cdeed4;
@@ -591,9 +630,7 @@ header .photoContainer img {
   background-color: #cc6979;
 }
 .projects .overlay {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: hidden;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -645,7 +682,7 @@ header .photoContainer img {
   display: inline-block;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-color: #E93313;
+  background-color: #E66961;
   color: #FFFFFF;
   cursor: pointer;
   margin: 0;
@@ -689,7 +726,10 @@ header .photoContainer img {
 }
 
 .overlay.reveal {
-  opacity: 1 !important;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .contact {
@@ -713,7 +753,7 @@ header .photoContainer img {
   text-align: center;
   padding: 10px;
 }
-.contact fieldset {
+.contact form {
   border: none;
   width: 100%;
   display: -webkit-box;
@@ -724,8 +764,11 @@ header .photoContainer img {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.contact fieldset input,
-.contact fieldset textarea {
+.contact form textarea {
+  resize: none;
+}
+.contact form input,
+.contact form textarea {
   border-radius: 8px;
   border: none;
   font-weight: 400;
@@ -737,27 +780,27 @@ header .photoContainer img {
   color: #6d7277;
   font-size: 0.8rem;
 }
-.contact fieldset input ::-webkit-input-placeholder, .contact fieldset textarea ::-webkit-input-placeholder {
+.contact form input ::-webkit-input-placeholder, .contact form textarea ::-webkit-input-placeholder {
   font-weight: 300;
 }
-.contact fieldset input ::-moz-placeholder, .contact fieldset textarea ::-moz-placeholder {
+.contact form input ::-moz-placeholder, .contact form textarea ::-moz-placeholder {
   font-weight: 300;
 }
-.contact fieldset input :-ms-input-placeholder, .contact fieldset textarea :-ms-input-placeholder {
+.contact form input :-ms-input-placeholder, .contact form textarea :-ms-input-placeholder {
   font-weight: 300;
 }
-.contact fieldset input ::-ms-input-placeholder, .contact fieldset textarea ::-ms-input-placeholder {
+.contact form input ::-ms-input-placeholder, .contact form textarea ::-ms-input-placeholder {
   font-weight: 300;
 }
-.contact fieldset input ::placeholder,
-.contact fieldset textarea ::placeholder {
+.contact form input ::placeholder,
+.contact form textarea ::placeholder {
   font-weight: 300;
 }
 .contact .contactSubmit {
   border: none;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-color: #E93313;
+  background-color: #E66961;
   color: white;
   cursor: pointer;
   margin: 0;
@@ -768,6 +811,15 @@ header .photoContainer img {
 }
 .contact .contactSubmit:hover, .contact .contactSubmit:focus-visible {
   background-color: #000000;
+}
+
+footer {
+  background-color: #F8F5F2;
+  text-align: center;
+}
+footer p {
+  margin: 0;
+  font-size: 0.7rem;
 }
 
 @media (min-width: 1250px) {
@@ -813,7 +865,7 @@ header .photoContainer img {
 @media (min-width: 1025px) {
   h1 {
     font-size: 3.8rem;
-    padding-bottom: 120px;
+    padding-bottom: 80px;
     margin: 0;
   }
 
@@ -864,7 +916,7 @@ header .photoContainer img {
   }
 
   .skills {
-    padding: 5px 15px 45px 15px;
+    padding: 25px 15px 45px 15px;
   }
   .skills .skillsList li {
     margin: 44px;
@@ -885,6 +937,10 @@ header .photoContainer img {
 
   .skills .skillsList .skillSubtitle {
     margin: 25px;
+  }
+
+  .projects .projectContainer h4 {
+    top: 15%;
   }
 }
 @media (min-width: 575px) and (max-width: 768px) {
